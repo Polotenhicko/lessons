@@ -1,8 +1,23 @@
 let num = 266219;
+
+num ** 3;
+
+num += '';
+
 let multiplication = 1;
 
-for (let i = 1; i <= num; i++) {
-  multiplication *= i;
+for (let i = 0; i < num; i++) {
+  if (num.charAt(i) >= 1) {
+    multiplication *= num.charAt(i);
+  } else {
+    break;
+  }
 }
 
-console.log(multiplication);
+multiplication = multiplication ** 3;
+
+multiplication += '';
+
+let twoNumber = `${multiplication.charAt(0)}${multiplication.charAt(1)}`;
+
+console.log(twoNumber);
