@@ -1,7 +1,5 @@
 let num = 266219;
 
-num ** 3;
-
 num += '';
 
 let multiplication = 1;
